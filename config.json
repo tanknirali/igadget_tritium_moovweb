@@ -1,0 +1,8 @@
+{
+  
+  "host_map": [
+    "$.igadgetcommerce.com => www.igadgetcommerce.com",
+    "$.igadgetcommerce.com => igadgetcommerce.com"
+  ],
+"layers": ["mobile","tablet"]
+}

@@ -1,0 +1,24 @@
+
+ # - cachify.js
+---
+- :output_file: head.js
+  :input_directories:
+    - head
+  :input_files:
+  - host_map.js
+  - https://code.jquery.com/jquery-1.7.2.min.js
+  - http://downloads.moovweb.com/uranium/1.0.176/uranium.js
+  - http://downloads.moovweb.com/plutonium/0.1.95/passthrough_ajax.js
+  - aspnet.js
+  - vendor/jquery.DOMNodeAppear.js
+- :output_file: body.js
+  :input_directories:
+    - body
+  :input_files:
+  - vendor/jquery.unveil.js
+  - http://downloads.moovweb.com/uranium/1.0.176/uranium.js
+  - mw.Igadget.js
+- :output_file: main.js
+  :input_directories:
+    - main
+  :input_files:

@@ -1,0 +1,196 @@
+body.mw_mac {
+	#Wrapper{
+		.Left {
+			padding: 10px;
+			h2 {
+				margin-bottom: 5px;
+				font-size: $h2_size;
+			}
+			#SideCategoryShopByPrice, #SideShopByBrand {
+				h2 {
+					min-height: 0px;
+					padding: 11px 10px 10px;
+					margin-top: 2px;
+					margin-bottom: 0;
+					@include bar2;
+					.mw_indicator {
+						float: right;
+					}
+					&[data-ur-state="disabled"] {
+						.mw_indicator {
+							@extend .sprites-plus;
+						}
+					}
+					&[data-ur-state="enabled"] {
+						.mw_indicator {
+							@extend .sprites-minus;
+							
+						}
+					}
+				}
+				.BlockContent{
+					ul {
+						margin-top: 0px;
+						padding: 2px 0 0;
+						background-color: #F5F2E1;
+						border-left: 1px solid #5f0f02;
+						border-right: 1px solid #5f0f02;
+						border-bottom: 1px solid #5f0f02;
+						overflow: hidden;
+						li {
+							display: block;
+							width: 100%;
+							border-bottom: 1px solid #5f0f02;
+							a {
+								display: block;
+								padding: 11px 20px 9px;
+								color: #3D211A;
+								font-size: 13px;
+								font-weight: bold;
+								.mw_arrow {
+	  								@include sprites-menu_go;
+	  								float: right;
+								}
+							}
+							&:last-child {
+								padding-bottom: 3px;
+								overflow: hidden;
+								border-bottom: 0px none #000;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#LayoutColumn2 {
+			padding: 10px;
+			#CategoryHeading{
+				height: 180px;
+				.BlockContent{
+
+					#sortbox{
+						form{
+							.sort_container{
+								@include bar2;
+								*{
+							    	vertical-align: top;
+							    }
+							    padding-top: 10px;
+							    padding-left: 10px;
+								.mw_span{
+									float: left;
+									margin-top: 5px;
+									margin-right: 10px;
+								}
+								.mw_sort_select{
+									float: left;
+									width: 195px;
+									height: 35px;
+									#sort{
+										width: 195px;
+										height: 35px;
+										@include bar4;
+									}
+								}
+							}
+						}
+					}
+					.SubCategoryList{
+						margin-top: 10px;
+						border-style: solid;
+    					border-width: 1px;
+    					border-color: $border_container;
+    					background: $background_container;
+    					padding-top: 10px;
+    					padding-bottom: 10px;
+    					div{
+    						div{
+    							padding-top: 2px;
+    							padding-bottom: 2px;
+    							a{
+    								font-weight: bold;
+    							}
+    						}
+    					}
+					}
+				}
+			}
+
+			#CategoryContent{
+				form{
+					.ProductList {
+						margin-top: 10px;
+						magin-bottom: 0;
+						.Odd, .Even{
+							margin-right: 10px;
+							margin-bottom: 10px;
+							border-style: solid;
+    						border-width: 1px;
+    						border-color: $border_container;
+							width: 100%;
+							height: 145px;
+							background: $background_container;
+							padding-top: 10px;
+							padding-left: 10px;
+							padding-bottom: 10px;
+							padding-right: 10px;
+							.ProductImageContainer{
+								width: 120px;
+								float: left;
+								height: 123px;
+								#productimage{
+									a{
+										height: 120px;
+										width: 120px;
+									}
+								}
+							}
+							.ProductInfoContainer{
+								width: 60%;
+								height: 123px;
+								float: left;
+								margin-left: 10px;
+								display: table;
+								
+								.ProductInfoDetailsContainer{
+									float: top;
+									display: table-row;
+									height: 73px;
+									.ProductDetails{
+										align: left;
+										a{	
+											font-weight: bold;
+		  									max-width: 207px;	  							  				
+			  								display: block;
+										}
+									}
+									.ProductPriceRating{
+										align: left;
+										color: $red_error;
+									}
+								}
+								
+								.ProductAddBtnContainer{
+									display: table-row;
+									text-align: bottom;
+									position: relative;
+									width: 126px;
+									#productadd{
+										width: 126px;
+										#addtocart{
+											a{
+												width: 126px;
+												height: 30px;
+											}
+										}
+									}
+								}
+							}							
+						}
+					}
+				}
+			}
+		}
+	}
+}

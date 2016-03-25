@@ -1,0 +1,88 @@
+// Every page should have a class on the body
+// Scope that in each file at the start
+body.mw_home {
+	padding-top: 0;
+	#Wrapper{
+		.Left{
+			display: none;
+		}
+		.Content{
+			padding: 15px 10px 15px 10px;
+			display: block;
+			#HomeFeaturedProducts, #HomeNewProducts {
+				position: relative;
+				margin-bottom: 10px;
+				h2{
+					margin-top: 10px;
+					margin-bottom: 10px;
+					text-align: center;
+					font-size: 19px;
+				}
+				[data-ur-set="carousel"] {
+  					overflow: visible;
+  					position: relative;
+				}
+				.BlockContent{	
+					padding: 0px 15px 15px 15px;
+					margin-bottom: 10px;
+					overflow: hidden;
+					height: 254px;
+					[data-ur-carousel-component="scroll_container"] {
+						position: relative;
+					}						
+					.Odd, .Even{
+						height: 234px;
+						width: 158px;
+						padding: 10px 10px 10px 10px;
+						float: left;
+						[data-ur-carousel-component="item"] {
+							float: left;
+						}
+						#productimage{
+							margin: 3px 3px 3px 3px;
+							height: 140px;
+						}
+						.ProductDetails{
+							align: left;
+							margin: 3px 3px 3px 3px;
+							height: 26px;
+							a{
+								color: $black;
+								overflow: hidden;
+								display: -webkit-box;
+								max-width: 100%;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+								display: inline-block;
+								font-weight: normal;
+								font-size: 13px;
+								font-family: Trebuchet MS,Arial,Helvetica,sans-serif;
+							}
+						}
+						.ProductPriceRating{
+							margin: 3px 3px 3px 3px;
+							height: 15px;
+							align: left;
+							font-size: 13px;
+							font-family: Trebuchet MS,Arial,Helvetica,sans-serif;
+						}
+						#productadd{
+							padding: 5px;
+							margin: 3px;
+							height: 20px;
+							width: 140px;
+							#addtocart{
+								a{
+									width: 126px;
+									height: 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+

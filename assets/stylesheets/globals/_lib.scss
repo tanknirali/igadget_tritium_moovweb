@@ -1,0 +1,111 @@
+@import "lib/helper";
+@import "lib/spacing";
+@import "lib/boxes";
+@import "lib/button";
+@import "lib/forms";
+
+@mixin grad_base {
+  padding: $spacing;
+  font-weight: bold;
+  color: $color4;
+  text-shadow: $text_shadow;
+}
+
+@mixin grad1 {
+  @include grad_base;
+  @include background($grad4);
+  border-top: $border4;
+  padding: 0;
+}
+
+@mixin mw_h1 {
+  font-size: $h1_size;
+  color: $color4;
+  font-weight: normal;
+  text-shadow: $text_shadow;
+}
+.mw_h1 {
+  @include mw_h1;
+}
+
+@mixin bar_inner_base {
+  position: relative;
+  overflow: hidden;
+  padding: $spacing;
+  line-height: 1.4;
+  font-size: $h3_size;
+  font-weight: bold;
+}
+@mixin bar1 {
+  @include bar_inner_base;
+  @include background($grad2);
+  border-top: 1px solid $color2;
+  min-height: 40px;
+  padding: 0;
+  color: $color4;
+  text-decoration: none;
+  a {
+    color: $color4;
+    padding: $spacing;
+  }
+}
+.mw_bar1 {
+  @include bar1;
+}
+
+@mixin bar2 {
+  @include bar_inner_base;
+  @include background($grad2);
+  border-top: 1px solid $color2;
+  min-height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  color: $color4;
+  text-decoration: none;
+  a {
+    color: $color4;
+    padding: $spacing;
+  }
+}
+
+@mixin bar3 {
+  @include bar_inner_base;
+  @include background($grad2);
+  border-top: 1px solid $color2;
+  min-height: 40px;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px ;
+  color: $color4;
+  text-decoration: none;
+  a {
+    color: $color4;
+    padding: $spacing;
+  }
+}
+
+.mw_bar3 {
+  @include bar3;
+}
+
+@mixin bar4 {
+  position: relative;
+  overflow: hidden;
+  padding: $spacing;
+  line-height: 1.4;
+  font-size: $h3_size;
+  @include background($grad2);
+  border-top: 1px solid $color2;
+  min-height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: $white;
+  color: $color4;
+  text-decoration: none;
+  a {
+    color: $color4;
+    padding: $spacing;
+  }
+}
+
+
+

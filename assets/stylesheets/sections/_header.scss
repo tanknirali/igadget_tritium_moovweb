@@ -1,0 +1,361 @@
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+  #Header {
+  border-top: 1px solid black;
+  #Logo {
+    @include background(linear-gradient(#C14102 0, shade(#C14102, 20%) 100%));
+    @include clearfix();
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 30px;
+    *{
+      vertical-align: top;
+    }
+    #LogoContainer{
+      float: left;
+      display: inline-block;
+      width: 60%;
+      position: relative;
+      h1 {
+        a {
+          @include mw_h1; 
+        } 
+      }
+    }   
+    #TopMenu{
+      float: right;
+      ul {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        float: right;
+        li {
+            float: right;
+            margin-top: -1px;  
+        }
+        .First {
+          a {
+            height: 39px;
+            @extend .buttons-user;
+            display: block;
+            text-indent: -9999px;
+          }
+        }
+        .CartLink {
+          margin-right: 10px;
+          a {
+            height: 39px;
+            @extend .buttons-cart;
+            display: block;
+            text-indent: -9999px;
+          }
+        }
+      }
+    }
+  }
+  .mw_header_bottom {
+    @include bar1;
+    @include clearfix();
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    min-height: 33px;
+    *{
+      vertical-align: top;
+    }
+    .mw_search {
+      text-align: left;
+      display: inline-block;
+      width: 75%;
+      float: left;
+      position: relative;
+      form{
+        height: 33px;
+        padding: 0;
+        position: relative;
+        display: block;
+        input[type='text']{
+          
+          border: 1px solid black;
+          background-color: #f1f0f0;
+          font-size: 13px;
+          padding: 4px;
+          height: 33px;
+          margin: 0;
+          width: 100%;
+          display: block;
+        }
+
+        input[type='image']{
+          width: 40px;
+          height: 33px;
+          opacity: 0;
+        }
+
+        .mw_search_btn {
+          width: 40px;
+          height: 33px;
+          position: absolute;
+          top: 0;
+          right: -13px;
+        }
+      }
+    }
+    #menu_btn{
+      margin-left: 15px;
+      margin-right: 10px;
+      float: right;
+      height: 33px;
+      &[data-ur-state="disabled"] span{
+        @extend .buttons-menu-on;
+        display: none;
+      }
+      &[data-ur-state="enabled"] span{
+        @extend .buttons-menu-on;
+        display: block;
+      }     
+    }
+    #toggler_content{
+      #menu{
+        padding: 2px 0 0;
+        margin-top: 50px;
+        margin-right: 10px;
+        background-color: #F5F2E1;
+        *{
+          vertical-align: top;
+        }
+        @include clearfix();
+        li{
+          display: block;
+          width: 100%;
+          border-bottom: 1px solid #C0BCA3;
+          a{
+            display: block;
+            padding: 11px 10px 10px;
+            color: #3D211A;
+            text-shadow: 1px 1px 0px white;
+          }
+        }
+      }
+      #SideCategoryList{
+        h2{
+          font-size: $h1_size;
+          color: $color4;
+          font-weight: normal; 
+          text-align: center;
+          margin-right: 10px;
+        }
+        .category-list{
+          padding: 2px 0 0;
+          margin-right: 10px;
+          background-color: #F5F2E1;
+          *{
+            vertical-align: top;
+          }
+          @include clearfix();
+          li{
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid #C0BCA3;
+            a{
+              display: block;
+              padding: 11px 10px 10px;
+              color: #3D211A;
+              text-shadow: 1px 1px 0px white;
+            }
+          }
+        }
+      }
+    }
+  }      
+}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+  #Header {
+  border-top: 1px solid black;
+  #Logo {
+    @include background(linear-gradient(#C14102 0, shade(#C14102, 20%) 100%));
+    @include clearfix();
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 30px;
+    *{
+      vertical-align: top;
+    }
+    #LogoContainer{
+      float: left;
+      display: inline-block;
+      width: 50%;
+      position: relative;
+      h1 {
+        a {
+          @include mw_h1; 
+        } 
+      }
+    }   
+    #TopMenu{
+      margin-left: 15px;
+      margin-right: 10px;
+      float: right;
+      ul {
+        margin-top: 0px;
+        float: right;
+        li {
+            float: right;
+            margin-top: -1px;  
+        }
+        .First {
+          a {
+            height: 39px;
+            @extend .buttons-user;
+            display: block;
+            text-indent: -9999px;
+          }
+        }
+        .CartLink {
+          margin-right: 10px;
+          a {
+            height: 39px;
+            @extend .buttons-cart;
+            display: block;
+            text-indent: -9999px;
+          }
+        }
+      }
+    }
+  }
+  .mw_header_bottom {
+    @include bar1;
+    @include clearfix();
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    min-height: 33px;
+    *{
+      vertical-align: top;
+    }
+    .mw_search {
+      text-align: left;
+      display: inline-block;
+      width: 75%;
+      float: left;
+      position: relative;
+      form{
+        height: 33px;
+        padding: 0;
+        position: relative;
+        display: block;
+        input[type='text']{
+          
+          border: 1px solid black;
+          background-color: #f1f0f0;
+          font-size: 13px;
+          padding: 4px;
+          height: 33px;
+          margin: 0;
+          width: 100%;
+          display: block;
+        }
+
+        input[type='image']{
+          width: 40px;
+          height: 33px;
+          opacity: 0;
+        }
+
+        .mw_search_btn {
+          width: 40px;
+          height: 33px;
+          position: absolute;
+          top: 0;
+          right: -13px;
+        }
+      }
+    }
+    #menu_btn{
+      margin-left: 15px;
+      margin-right: 10px;
+      float: right;
+      height: 33px;
+      &[data-ur-state="disabled"] span{
+        @extend .buttons-menu-on;
+        display: none;
+      }
+      &[data-ur-state="enabled"] span{
+        @extend .buttons-menu-on;
+        display: block;
+      }     
+    }
+    #toggler_content{
+      #menu{
+        padding: 2px 0 0;
+        margin-top: 50px;
+        margin-right: 10px;
+        background-color: #F5F2E1;
+        *{
+          vertical-align: top;
+        }
+        @include clearfix();
+        li{
+          display: block;
+          width: 100%;
+          border-bottom: 1px solid #C0BCA3;
+          a{
+            display: block;
+            padding: 11px 10px 10px;
+            color: #3D211A;
+            text-shadow: 1px 1px 0px white;
+          }
+        }
+      }
+      #SideCategoryList{
+        h2{
+          font-size: $h1_size;
+          color: $color4;
+          font-weight: normal; 
+          text-align: center;
+          margin-right: 10px;
+        }
+        .category-list{
+          padding: 2px 0 0;
+          margin-right: 10px;
+          background-color: #F5F2E1;
+          *{
+            vertical-align: top;
+          }
+          @include clearfix();
+          li{
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid #C0BCA3;
+            a{
+              display: block;
+              padding: 11px 10px 10px;
+              color: #3D211A;
+              text-shadow: 1px 1px 0px white;
+            }
+          }
+        }
+      }
+    }
+  }      
+}
+}
+
+  
+
+
+
+
